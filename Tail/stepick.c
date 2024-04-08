@@ -1,8 +1,9 @@
 #include <stdio.h>
 
-void spiral (int m, int n){
+void spiral (void){
     //m,n - m количество строк, n количество столбцов;
-    //scanf;
+    int m, n;
+    scanf("%d %d", &m, &n);
     int arr [m][n];
     int number = 1;
     int lw = -1;
@@ -95,10 +96,11 @@ void spiral (int m, int n){
             printf("%3d", arr[i][j]);
         }
         printf("\n");
-    }  
+    }
+    return 0;
 }
 
 int main (){
-    spiral(6,7);
+    spiral();
     return 0;
 }
